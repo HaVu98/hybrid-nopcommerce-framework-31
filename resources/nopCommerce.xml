@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NopCommerce Automation Testing">
+
+    <parameter name="userUrl" value="https://demo.nopcommerce.com"></parameter>
+    <parameter name="adminUrl" value="https://admin-demo.nopcommerce.com"></parameter>
+
+    <listeners>
+        <listener class-name="commons.MethodListener"></listener>
+    </listeners>
+
+<!--    <test name="Run on Firefox browser">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="com.nopcommerce.users.Level_01_Repeat_Yourself" />-->
+<!--            <class name="com.nopcommerce.users.Level_02_BasePage_I_Initial" />-->
+<!--            <class name="com.nopcommerce.users.Level_02_BasePage_II_StaticMethod" />-->
+<!--            <class name="com.nopcommerce.users.Level_03_Page_Object" />-->
+<!--            <class name="com.nopcommerce.users.Level_04_Multiple_Browser" />-->
+<!--            <class name="com.nopcommerce.users.Level_09_Switch_Site_Url" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on Chrome browser">-->
+<!--        <parameter name="browser" value="chrome"></parameter>-->
+<!--        <classes>-->
+<!--       <class name="com.nopcommerce.users.Level_13_Assert" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Run on Edge browser">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+           <class name="com.nopcommerce.users.Level_14_Log4J" />
+        </classes>
+    </test>
+
+</suite>
